@@ -1,1 +1,14 @@
 document git https://git-scm.com/doc
+
+git tags:
+git commit -m
+git add
+git status 
+mkdir
+dir
+git push origin main
+git pull
+
+atalhos:
+ctrl + l = limpa
+shift insert = cola
