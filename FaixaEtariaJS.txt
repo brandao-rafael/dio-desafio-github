@@ -1,0 +1,51 @@
+function faixaEtaria (idade){
+  
+let infantil =0;
+  
+let adultoJovem =0;
+  
+let adulto =0;
+  
+let adultoVelho =0;
+  
+let idoso =0;
+  
+let percInfantil =0;
+  
+let percIdoso = 0;
+    
+for (let i = 0; i < idade.length; i++){
+
+      if (idade[i] <= 15){
+
+        infantil++;
+      
+} else if (idade[i] < 30){
+
+        adultoJovem++;
+      
+} else if (idade[i] < 45){
+
+        adulto++;
+      
+} else if (idade[i] < 60){
+
+        adultoVelho++;
+      
+} else {
+
+        idoso++;
+      
+       }
+      
+    
+}
+  
+percInfantil = (infantil / idade.length * 100 );
+  percIdoso = (idoso / idade.length * 100);
+
+  return infantil + " " + adultoJovem + " " + adulto + " " + adultoVelho + " " + idoso +" " + percInfantil + " " + percIdoso;
+
+}
+
+console.log(faixaEtaria([5,2,3,67,50,28,5,38,39,54,68,24,31,13,22]))
